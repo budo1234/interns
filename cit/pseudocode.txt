@@ -1,0 +1,17 @@
+program that calculates the area of a circle, area of a sector then output the result
+
+input: 
+radius: integer
+angle: integer
+
+# compute the area of a circle
+ get radius r from input
+ set variable area = πr^2
+ print area variable
+
+# compute the area of a sector in a circle
+ get radius r from input
+ get angle θ from input
+ convert angle θ to radians
+ set variable area = 1/2 × r^2*θ
+ print area variable

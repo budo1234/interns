@@ -1,0 +1,373 @@
+body{
+    background: mintcream;
+    color: #191919;
+    font-family: sans-serif;
+}
+
+.logo{
+    width: 520px;
+}
+header{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-btn{
+    padding: 10px 18px;
+    background: #212121;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    color: white;
+    display: inline-block;
+    margin: 30px 0;
+    border-radius: 20px;
+
+}
+
+
+header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 18px;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header ul a:hover{
+color: blue;
+}
+
+
+nav{
+    display: flex;
+}
+
+nav li{
+    position: relative;
+}
+
+nav a{
+    font-size: var(--p-font);
+    color: var(--text-color);
+    font-weight: 400;
+    padding: 10px 25px;
+}
+
+nav a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: var(--main-color);
+    bottom: -3px;
+    left: 0;
+    transition: ease .40s;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: blue;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding: 100px 18%;
+}
+
+.home{
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    background: url(pexels-photo-925743.webp);
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: centre;
+    grid-gap: 10rem;
+}
+
+.home text h1{
+    margin: 30px 0px 30px;
+    font-size: medium;
+    line-height: 1;
+    font-weight: 500;
+
+}
+
+.home-text h5{
+    margin-bottom: 23px;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+span{
+    color: orange;
+}
+
+.home-text h3{
+    color: orange;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.home-text p{
+    font-size: large;
+    color: #212121;
+    line-height: 29px;
+    margin-bottom: 20px;
+}
+
+.social ul li{
+    display: inline-block;
+    color: red;
+    background: darkgoldenrod;
+    font-size: large;
+    font-weight: bolder;
+    padding: 10px 35px;
+    font-size: 400;
+    line-height: 19px;
+    border-radius: 17px;
+    transition: ease .40s;
+}
+
+
+.social ul li a:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.btn{
+    display: inline-block;
+    color: blue;
+    background: lightskyblue;
+    font-size: medium;
+    padding: 10px 40px;
+    font-weight: 200;
+    line-height: 30px;
+    border-radius: 31px;
+    transition: ease .40s;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.home-img img{
+    max-width: 150%;
+    width: 500px;
+    height: auto;
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,auto));
+    grid-gap: 4rem;
+    align-items: center;
+    text-align: center;
+}
+
+.sub-box{
+    padding: 45px 45px 45px 45px;
+    transition: ease .50s;
+    cursor: pointer;
+}
+.sub-img img{
+    max-width: 100%;
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.sub-box h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.sub-box p{
+    font-size: large;
+    color: #212121;
+    line-height: 28px;
+}
+
+.sub-box:hover{
+    background: #fff;
+    box-shadow: 18px 0px 80px 0px rgb(10, 25, 70 / 7%);
+    border-radius: 13px;
+    will-change: transform;
+    transform: perspective(1000px) rotate(2.70deg) rotateY(10.20deg) scale3d(1.05,1.05,1.05);
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+
+.about-img img{
+    max-width: 100%;
+    width: 520px;
+    height: auto;
+}
+
+.about-text h3{
+    color: #212121;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.about-text p{
+    max-width: 520px;
+    font-size: medium;
+    color: #212121;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+.heading{
+    text-align: center;
+}
+
+.heading h2{
+    font-size: large;
+    font-weight: bold;
+    margin: 7px 0px 20px;
+    line-height: 1.1;
+}
+
+.heading h3{
+    color: red;
+    font-size: 25px;
+    font-weight: 500;
+}
+.heading p{
+    font-size: large;
+    color: #212121;
+    line-height: 28px;
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.col{
+    position: relative;
+}
+.col img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 13px;
+    transition: all .40s;
+}
+
+.layer:hover{
+    background: linear-gradient(rgba (0,0,0,0.5) 0%,#191919);
+}
+
+.layer h3{
+    position: absolute;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    color: #212121;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all .40s;
+}
+
+.layer:hover h5{
+    bottom: 45%;
+    opacity: 1;
+}
+
+.contact{
+    background: grey;
+    width: 60%;
+    margin: 100px auto;
+    padding: 70px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 35px;
+    background-image: url(eye-glasses-coffee-cup-notebook-black-leather_35674-5936.avif);
+    background-size: cover;
+}
+
+.center h3{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: #191919;
+}
+.center p{
+    font-size: medium;
+    color: #fff;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.contact form input[type="email"] {
+    max-width: 90%;
+    width: 450px;
+    padding: 12px 15px;
+    background: white;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 35px;
+}
+
+.contact form input[type="submit"] {
+    max-width: 10%;
+    color: black;
+    padding: 12px 15px;
+    width: 400px;
+    background: red;
+    border: none;
+    outline: none;
+    margin: 0 10px 20px 0;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.ends{
+    text-align: center;
+    padding: 40px;
+}
+
+.end p{
+    font-size: medium;
+    letter-spacing: 1px;
+}

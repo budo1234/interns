@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after, *::after {
+    box-sizing: border-box;
+}
+
+
+/* My variables */
+
+:root {
+    --soft-red:hsl(7, 90%, 70%);
+    --yellow:hsl(53, 100%, 49%);
+    --dark-sat-cyan:hsl(167, 40%, 24%);
+    --dark-blue-photo-text: hsl(198, 62%, 26%);
+    --light-moderate-cyan: hsl(180, 54%, 86%);
+    --drk-moderate-cyan: hsl(168, 34%, 41%);
+    /* hsl(168, 34%, 41%) */
+    --dark-sat-blue: hsl(212, 27%, 19%);
+    --very-drk-grayish-blue: hsl(213, 9%, 39%);
+    --drk-grayish-blue: hsl(232, 9%, 55%;);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --upper-blue: rgba(61,190,255,255);
+}
+/* general styling */
+body {
+    font-family:'barlow';
+}
+
+body {
+  background-image: url('ift\ family.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 110% 100%;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Upper part styling */
+.container > .upper-part {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    margin-top: 0px;
+    height:32.8rem;    
+    color:var(--white);
+}
+.upper-part > .sunny-burger {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.upper-part > .sunny-burger > .sunny-text {
+    font-size: 1.65rem;
+    height: 100%;
+}
+.upper-part >  .sunny-burger > .hamburger {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 28px;
+    height: 25px;
+    z-index: 1;
+}
+.upper-part >  .sunny-burger > .hamburger 
+> img {
+    object-fit: contain;
+}
+.upper-part >  .sunny-burger > .toggler {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 28px;
+    height: 25px;
+    opacity: 0;
+    z-index: 2;
+}
+/* Nav bar */
+.upper-part > .sunny-burger > nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 0;
+    right: 0;
+    top: 112px;
+    margin: 0 auto;
+    /* margin-left: 12.5px; */
+    background-color: var(--white);
+    color: gray;
+    width: 90%;
+    
+    height: 18rem;
+    font-size: 1.3rem;
+    border-top: 40px solid ;
+    border-top-right-radius: 100px;
+    z-index: 1;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out;
+}
+/* nav-bar contact */
+.upper-part > .sunny-burger > nav > .contact {
+    background-color: var(--yellow);
+    padding: 20px 30px;
+    color: whitesmoke;
+    border-radius: 30px;
+    font-family: 'fraunces';
+    font-size: 1rem;
+}
+/* When checkbox is checked*/
+.upper-part > .sunny-burger > .toggler:checked + nav {
+    display: flex;
+    opacity: 1;
+}
+/* We are creatives */
+.upper-part >  .upper-text {
+    display: inherit;
+    justify-content: center;
+    font-family: 'fraunces';
+    font-weight: 900;
+    font-size: large;
+    text-align: center;
+    letter-spacing: 5.9px;
+    margin-top: 80px;
+}
+.upper-part > .arrow-img {
+    height: 100px;
+    width: 30px;
+    margin: auto;
+    margin-top: 60px;
+}
+.upper-part > .arrow-img > img {
+    object-fit: contain;
+}
+
+/*  Main Content Styling*/
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.main-section > .transform-brand {
+    padding: 40px 30px;
+    color: white;
+    text-align: center;
+    padding-bottom: 60px;
+    line-height: 1.6;
+}
+.main-section > .transform-brand > .transform-top {
+    font-family: 'fraunces';
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    padding: 0 40px;
+}
+.main-section > .transform-brand > .transform-learn {
+    color: black;
+    font-family: 'fraunces';
+    font-size: 1.1rem;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-bottom: solid var(--yellow) ;
+    width: 100%;  
+    cursor: pointer;
+}
+.main-section > .transform-brand > 
+.transform-learn.red {
+    border-bottom: solid var(--soft-red) ;
+}
+/* Graphic Design & Photography Styling*/
+.main-section > .graphic-design {
+    top: 0;
+    position: relative;
+    margin: 0;
+    height: 100%;
+    color: cornsilk;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 25px;
+    border: 1px solid black;
+    padding: 10px;
+}
+.main-section > .graphic-design.pineapple {
+    top: -4px;
+   
+}
+img:hover {
+    opacity: 0.4;
+  }
+
+.main-section > .graphic-design > figure {
+    height: 100%;
+}
+.main-section > .graphic-design > .graphic-text {
+    position: absolute;
+    bottom: 60px;
+    text-align: center;
+    line-height: 1.6;
+}
+.main-section > .graphic-design > .graphic-text 
+> .graphic-text-top {
+    font-size: 1.3rem;
+    font-family: 'fraunces';
+    margin-bottom: 25px;
+}
+.main-section > .graphic-design > .graphic-text 
+> p {
+    padding: 0 10px;
+
+}
+/* Client Testimonial */
+.client-testimonial {
+   padding: 80px 0;
+   text-align: center;
+}
+.client-testimonial > .testimonial-top-text {
+    .circular--landscape { 
+        display: inline-block; 
+        position: relative; 
+        width: 100px; 
+        height: 100px; 
+        overflow: hidden; 
+        border-radius: 80%;
+
+     } .circular--landscape img { 
+        width: auto; 
+        height: 100%; 
+        margin-left: -50px; 
+    }
+}
+.client-testimonial > .testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+.client-testimonial > .testimonials > .client-img {
+  width: 100px;
+  height: 100px;
+}
+.client-testimonial > .testimonials > .client-img
+img {
+    border-radius: 50%;
+}
+.client-testimonial > .testimonials > p{
+    padding: 30px 30px;
+    color: white;
+    text-align: center;
+    line-height: 1.6;
+}
+.client-testimonial > .testimonials > .client-name {
+    font-family: 'fraunces';
+    font-size: 1.2rem;
+}
+.client-testimonial > .testimonials > .client-role {
+    color: hsl(212, 27%, 19%);
+    margin-top: 15px;
+    font-size: 1.17rem;
+}
+
+/* Bottom Image Grid */
+.bottom-image-grid > div {
+    display: flex;
+}
+/* Sunny side bottom */
+.sunny-side-bottom {
+    background-color: var(--light-moderate-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    padding-bottom: 80px;
+}
+.sunny-side-bottom > .sunny-side-text {
+    color: var(--dark-sat-cyan);
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.sunny-side-bottom > .company-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: 40px;
+    color: var(--drk-moderate-cyan);
+    font-size: 1.17rem;
+}
+.sunny-side-bottom > .company-info > div {
+    cursor: pointer;
+}
+.sunny-side-bottom > .company-info > div:hover {
+    color: white;
+}
+.sunny-side-bottom > .socials {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding: 5% 110px;
+    margin-top: 100px;
+}
+.sunny-side-bottom > .socials > figure > img:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.sunny-side-bottom > .socials > figure {
+    margin: 30px;
+}
+
+@media (min-width:600px) {
+    /* Upper part styling */
+    .container > .upper-part {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        margin-top: 0px;
+        background:url(./images/desktop/image-header.jpg) 
+        no-repeat center center/cover;
+        /* background-color:var(--upper-blue); */
+        height:32.8rem;    
+        color:var(--white);
+    }
+    .main-section > .graphic-design > .graphic-text {
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+     /* Bottom Image Grid */
+     .bottom-image-grid  {
+        display: flex;
+        width: 100%;
+    }
+    .bottom-image-grid > div {
+        width: 50%;
+    }
+    .bottom-image-grid > div figure {
+        width: 50%;
+    }
+    .sunny-side-bottom > .company-info {
+        width: 600px;
+    }
+    .sunny-side-bottom > .socials {
+        width: 500px;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .container > .upper-part {
+       background:url(./images/desktop/image-header.jpg) 
+       no-repeat center center/cover;
+       height:42.8rem;    
+       /* background: rgba(256, 256, 256, 0.4); */
+    }
+    .container > .upper-part {
+        padding-top: 30px;
+    }
+    .upper-part > .sunny-burger {
+        padding: 0 40px;
+    }
+    .upper-part >  .sunny-burger > .hamburger {
+        display: none;
+    }
+    .upper-part >  .sunny-burger > .toggler {
+        opacity: 1;
+        display: none;
+    }
+    /* Nav-bar */
+    .upper-part > .sunny-burger > nav {
+        position: fixed;
+        display: contents;
+        flex-direction: row;
+        justify-content: space-between;
+        opacity: 1;
+        width: 45%;
+        background-color: inherit;
+        /* background-color: yellow; */
+        height: 3rem;
+        border-radius: 0;
+        border: none;
+        margin: 0;
+        color: white;
+    }
+    /* Nav-bar contact */
+    .upper-part > .sunny-burger > nav > .contact {
+        background-color: inherit;
+        padding: 0;
+        color: white;
+    }
+    /* Nav divs */
+    .container >  .upper-part > .sunny-burger > nav > div {
+        width: 150px;
+        height: 60px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .upper-part > .sunny-burger > nav > div:hover {
+        cursor: pointer;
+        background-color: var(--light-moderate-cyan);
+     }
+    .upper-part > .sunny-burger > nav > .contact {
+        font-family: inherit;
+        font-size: 1.2rem;
+    }
+    /* Arrow Image */
+    .upper-part > .arrow-img {
+        margin-top: 90px;
+    }
+    /* Yellow Egg And Transform your brand */
+    .main-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main-section > * {
+        width: 50%;
+    }
+    /* The first section with the transform-brand class */
+    .main-section > .transform-brand.first {
+        order: -1;
+    }
+    .main-section > .transform-brand {
+        width: 50%;
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+        padding: 0 0;
+        padding: 0px 12.5%;
+        padding-bottom: 0px;
+        font-size: 1.5rem;
+        min-height: 34rem;
+        /* background-color: yellow; */
+    }
+    .main-section > .transform-brand > .transform-top {
+        padding: 0;
+    }
+    .main-section > .transform-brand > .transform-learn {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    /* Graphic-design  & Photography*/
+    .main-section > .graphic-design {
+        height: 42rem;
+    }
+    .main-section > .graphic-design.pineapple {
+        top: 0;
+    }
+    .main-section > .graphic-design > .graphic-text {
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-size: 1.3rem;
+    }
+    .main-section > .graphic-design > .graphic-text 
+    > p {
+             padding: 0 0px;
+
+    }
+    /* Client Testimonial */
+    .client-testimonial {
+        width: 100%;
+        padding: 80px 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .client-testimonial > .testimonial-top-text {
+        width: 100%;
+    }
+    .client-testimonial > .testimonials {
+        width: 30%;
+        font-size: 1.3rem;
+    }
+    .client-testimonial > .testimonials > .client-role {
+        font-size: 1.4rem;
+    }
+     /* Bottom Image Grid */
+    .bottom-image-grid  {
+        display: flex;
+        width: 100%;
+    }
+    .bottom-image-grid > div {
+        width: 50%;
+    }
+    .bottom-image-grid > div figure {
+        width: 50%;
+    }
+    /* information technology bottom */
+    .sunny-side-bottom {
+        width: 100%;
+    }
+    .sunny-side-bottom > .company-info {
+        width: 600px;
+    }
+    .sunny-side-bottom > .socials {
+        width: 300px;
+        border-radius: 10px;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    display: none;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

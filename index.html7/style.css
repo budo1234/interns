@@ -1,0 +1,22 @@
+
+/* CSS styles */
+.room-type {
+  margin-bottom: 20px;
+}
+.room-type label {
+  font-weight: bold;
+  
+}
+.calendar {
+  margin-bottom: 20px;
+}
+.cart {
+  margin-bottom: 20px;
+}
+.tabs {
+  margin-bottom: 20px;
+}
+.tab-content {
+  display: none;
+}
+  

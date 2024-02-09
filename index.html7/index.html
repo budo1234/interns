@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script src="/script.js"></script>
+<imgsrc="images.png" width="200px" height="200px">
+<html>
+<head>
+  <title>Accommodation Services</title>
+  <h2>Accommodation Services</h2>
+
+  <h2>Book a Room</h2>
+  <form id="booking-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required><br>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" required><br>
+    
+    <!-- Other form fields here -->
+    
+    <div class="room-type">
+      <label for="room-type">Room Type:</label>
+      <select id="room-type">
+        <option value="single">Single Room</option>
+        <option value="double">Double Room</option>
+        <option value="suite">Suite</option>
+      </select>
+    </div>
+    
+    <div class="calendar">
+      <label for="check-in">Check-in Date:</label>
+      <input type="date" id="check-in" required><br>
+      
+      <label for="check-out">Check-out Date:</label>
+      <input type="date" id="check-out" required><br>
+    </div>
+    
+    <div class="cart">
+      <h3>Cart</h3>
+      <p id="room-price"></p>
+      <p id="vat"></p>
+      <p id="total"></p>
+    </div>
+    
+    <button type="submit">Book Now</button>
+  </form>
+  
+
+  <h2>Additional Information</h2>
+  <div class="tabs">
+    <button class="tab" onclick="openTab('cancellation-policy')">Cancellation Policy</button>
+    <!-- Add more tabs as needed -->
+  </div>
+  <div id="cancellation-policy" class="tab-content">
+    <h3>Cancellation Policy</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora debitis cumque tempore harum maxime fuga dolorem illum velit officiis beatae nam, dolore consequatur alias iusto, vitae eum numquam similique accusantium.</p>
+  </div>
+  <!-- Add more tab content divs as needed -->
+
+</body>
+</html>
